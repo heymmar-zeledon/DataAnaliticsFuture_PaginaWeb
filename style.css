@@ -1,0 +1,77 @@
+html {
+  height:100%;
+}
+
+body {
+  /*margin:0;*/
+}
+
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+.content {
+  background-color:rgba(255,255,255,.8);
+  border-radius:.25em;
+  box-shadow:0 0 .25em rgba(0,0,0,.25);
+  box-sizing:border-box;
+  left:50%;
+  padding:10vmin;
+  position:fixed;
+  text-align:center;
+  top:50%;
+  transform:translate(-50%, -50%);
+}
+
+h1 {
+  font-family:monospace;
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
+
+/*
+
+Aqui va a quien nos referimos
+<div class="card">
+  <p align="justify" class=" card-body">
+    <ul>
+      <li>
+      Nuestros servicios estan orientados a:
+      Bancos que necesiten analizar como han ido sus finanzas con respento a los últimos años
+      Que quieran saber mediante un modelo predectivo en cuanto avanzaran sus finanzas en los proximos años 
+      </li>
+      <li>
+        Gobiernos: Que desean analizar la productividad del pais, y que aplicando modelos predectivos logren determinar cual es el mejor modelo de economia a elegir.
+      </li>
+      <li>
+        Organismos de salud como la OMS,OPS que al hacer uso de los modelos predictivos del machine learning puedan lograr predecir la tasa de expancion de una pandemia o inclusive la cantidad de posibles victimas para así estas lograr preparase y elaborar planes de contingencias.
+      </li>
+    </ul>
+    
+     </p>
+</div>>
+*/

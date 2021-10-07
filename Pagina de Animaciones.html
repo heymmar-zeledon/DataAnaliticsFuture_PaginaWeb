@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Rotaciones 3D</title>
+<style type="text/css">
+@keyframes anim1 {
+    from { transform: rotateX(0deg); -o-transform: rotateX(0deg);}
+		to {transform: rotateX(360deg); -o-transform: rotateX(360deg); }
+}
+@-moz-keyframes anim1 {
+    from { -moz-transform: rotateX(0deg);}
+		to {-moz-transform: rotateX(360deg);}
+}
+@-o-keyframes anim1 {
+    from { -o-transform: rotateX(0deg);}
+		to {-o-transform: rotateX(360deg);}
+}
+@-webkit-keyframes anim1 {
+    from { -webkit-transform: rotateX(0deg);}
+		to {-webkit-transform: rotateX(360deg);}
+}
+/*
+@-webkit-keyframes anim1 {
+   from { transform: rotateX(0deg); 
+	  -moz-transform: rotateX(0deg);
+	       -webkit-transform: rotateX(0deg);
+				 
+				 -o-transform: rotateX(0deg);
+				 -ms-transform: rotateX(0deg);
+				 }
+	 to { 
+	 
+	        -webkit-transform: rotateX(360deg);
+				-moz-transform: rotateX(360deg); 
+				-o-transform: rotateX(360deg);
+				-ms-transform: rotateX(360deg);
+			}
+}
+*/
+@-webkit-keyframes anim2 {
+
+   from { transform: rotateY(0deg);
+	  -o-transform: rotateY(0deg);
+	 -webkit-transform: rotateY(0deg);*/ 
+	 }
+	 
+	 to { transform: rotateY(360deg);
+	 -o-transform: rotateY(360deg);
+	 -webkit-transform: rotateY(360deg); */ 
+	 }
+}
+@-webkit-keyframes anim3 {
+   from { -webkit-transform: rotateZ(0deg);transform: rotateZ(0deg); }
+	 to { -webkit-transform: rotateZ(360deg); transform: rotateZ(360deg);}
+}
+@-webkit-keyframes anim4 {
+   from { -webkit-transform: rotateX(0deg) rotateY(0deg);transform: rotateX(0deg) rotateY(0deg); }
+	 to { -webkit-transform: rotateX(360deg) rotateY(360deg); transform: rotateX(360deg) rotateY(360deg) }
+}
+@-webkit-keyframes anim5 {
+   from { -webkit-transform: rotateX(0deg) rotateZ(0deg); transform: rotateX(0deg) rotateZ(0deg);}
+	 to { -webkit-transform: rotateX(360deg) rotateZ(360deg); transform: rotateX(360deg) rotateZ(360deg);  }
+}
+@-webkit-keyframes anim6 {
+   from { -webkit-transform: rotateY(0deg) rotateZ(0deg); }
+	 to { -webkit-transform: rotateY(360deg) rotateZ(360deg);  }
+}
+@-webkit-keyframes anim7 {
+   from { -webkit-transform:rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
+	 to { -webkit-transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);  }
+}
+@-webkit-keyframes anim8 {
+   from { -webkit-transform: rotate3d(9,3,0,0deg);  }
+	 50% { -webkit-transform: rotate3d(-9,-3,0,180deg);  }
+	 to { -webkit-transform: rotate3d(9,3,0,360deg);  }
+}
+@-webkit-keyframes anim9 {
+   from { -webkit-transform: rotate3d(1,1,1,0deg);  }
+	 50% { -webkit-transform: rotate3d(-1,-1,-1,180deg);  }
+	 to { -webkit-transform: rotate3d(1,1,1,360deg);  }
+}
+
+
+#capa1, #capa2, #capa3,#capa4,#capa5,#capa6,#capa7,#capa8, #capa9 { 
+         width: 100px; height: 100px; margin: 50px;
+         background: lime; border: 2px solid blue;
+				 border-radius: 10px; float: left;
+				 font: bold 14px arial; }
+
+
+				 
+				 
+				 
+#capa1 { -webkit-animation: anim1 3s linear infinite; }
+#capa2 { -webkit-animation: anim2 3s linear infinite; }
+#capa3 { -webkit-animation: anim3 3s linear infinite; }
+#capa4 { -webkit-animation: anim4 3s linear infinite; }
+#capa5 { -webkit-animation: anim5 3s linear infinite; }
+#capa6 { -webkit-animation: anim6 3s linear infinite; }
+#capa7 { -webkit-animation: anim7 3s linear infinite; }
+#capa8 { -webkit-animation: anim8 3s linear infinite; }
+#capa9 { -webkit-animation: anim9 3s linear infinite; }
+
+</style>
+</head>
+<body>
+<h1>Transformaciones en 3D</h1>
+<div id="capa1">rotateX (360deg)</div>
+<div id="capa2">rotateY (360deg)</div>
+<div id="capa3">rotateZ (360deg)</div>
+<div id="capa4">rotateX (360deg) rotateY (360deg)</div>
+<div id="capa5">rotateX (360deg) rotateZ (360deg)</div>
+<div id="capa6">rotateY (360deg) rotateZ (360deg)</div>
+<div id="capa7">rotateX (360deg) rotateY (360deg) rotateZ (360deg)</div>
+<div id="capa8">rotate3d (9,3,0,360deg)</div>
+<div id="capa9">rotate3d (1,1,1,360deg)</div>
+</body>
+</html>
+
